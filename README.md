@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+Merlin
+======
+Free template with [Twitter Bootstrap](http://getbootstrap.com/) framework.
 
-You can use the [editor on GitHub](https://github.com/ag-noel/beanpup/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Download
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[https://github.com/halibegic/merlin/archive/master.zip](https://github.com/halibegic/merlin/archive/master.zip)
 
-### Markdown
+### Credits
+ * [jQuery](http://jquery.com/)
+ * [Bootstrap](http://getbootstrap.com/)
+ * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+ * [Isotope](https://github.com/desandro/isotope)
+ * [ImagesLoaded](https://github.com/desandro/imagesloaded)
+ * [Animate.css](http://daneden.github.io/animate.css/)
+ * [jQuery Scroll To](http://flesler.blogspot.com/2007/10/jqueryscrollto.html)
+ * [jQuery One Page Nav](https://github.com/davist11/jQuery-One-Page-Nav)
+ * [jQuery Appear](https://github.com/morr/jquery.appear)
+ * [VenoBox](http://lab.veno.it/venobox/)
+ * [Unsplash](http://unsplash.com/)
+ * [Stockvault](https://www.stockvault.net/c/people)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Copyright and License
 
-```markdown
-Syntax highlighted code block
+Copyright 2014 [Hasan Alibegić](http://www.twitter.com/halibegic)
 
-# Header 1
-## Header 2
-### Header 3
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
-- Bulleted
-- List
+http://www.apache.org/licenses/LICENSE-2.0
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ag-noel/beanpup/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
