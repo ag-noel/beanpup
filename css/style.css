@@ -1,11 +1,20 @@
+@font-face {
+  font-family: 'Rimouski';
+
+  src: url('../fonts/rimouski.ttf');
+  src: url('.../fonts/rimouski-webfont.woff2') format('woff2'),
+       url('.../fonts/rimouski-webfont.woff') format('woff');
+}
+
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Rimouski', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #656c6d;
 	width: 100% !important;
 	height: 100% !important;
 }
+
 h1 {
 	font-weight: 700;
 }
@@ -19,12 +28,22 @@ h2 {
 	font-size: 34px;
 }
 
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
 
 p.intro {
 	font-size: 16px;
 	margin: 12px 0 0;
 	line-height: 24px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Rimouski', sans-serif;
 }
 a {
 	color: #333;
@@ -75,7 +94,7 @@ hr {
 	width: 100%;
 	height: auto;
 	padding: 100px 0;
-	text-align: center;
+	text-align: left;
 	color: #fff;
 	background: url(../img/intro-bg.jpg) no-repeat center top;
 	background-color: #7bc3d1;
@@ -88,44 +107,15 @@ hr {
 	padding: 25px 0 45px 0;
 }
 
-/* Contact Section */
-#contact {
-	padding: 100px 0 40px 0;
-	color: #121d1f;
-	background: #7bc3d1;
-}
-#contact h2 {
-	color: #fff;
-}
-#contact hr {
-	background: rgba(255,255,255,0.3);
-}
-#contact h3 {
-	padding-top: 20px;
-	font-size: 20px;
-	font-weight: 400;
-	color: #fff;
-}
-#contact form {
-	padding: 30px 0;
-}
-#contact i.fa {
-	color: #121d1f;
-	margin-bottom: 10px;
-}
-#contact .text-danger {
-	color: #E87E04;
-	text-align: left;
-}
 label {
 	font-size: 12px;
 	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Rimouski', sans-serif;
 	float: left;
 }
-#contact .form-control {
+.form-control {
 	display: block;
-	width: 100%;
+	width: 40%;
 	padding: 6px 12px;
 	font-size: 14px;
 	line-height: 1.42857143;
@@ -134,13 +124,8 @@ label {
 	background-image: none;
 	border: 0;
 	border-radius: 2px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	-webkit-transition: none;
-	-o-transition: none;
-	transition: none;
 }
-#contact .form-control:focus {
+.form-control:focus {
 	border-color: inherit;
 	outline: 0;
 	-webkit-box-shadow: transparent;
@@ -170,30 +155,44 @@ color: #2c3e50;
 	transition: all 0.5s;
 }
 .social i.fa:hover {
-	color: #121d1f;
-}
-#contact .btn {
-	background-color: transparent;
-	border: 1px solid #fff;
-	border-radius: 0;
-	padding: 10px 20px;
 	color: #fff;
-	margin-top: 15px;
 }
-#contact .btn:hover, #contact .btn:focus {
-	background-color: #121d1f;
-	border: 1px solid #121d1f;
+
+.button-default {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
+	background:-moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a', endColorstr='#68a54b',GradientType=0);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
 }
-.btn:active, .btn.active {
-	background-image: none;
-	outline: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
+.button-default:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
+	background:-moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-ms-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#74ad5a',GradientType=0);
+	background-color:#68a54b;
 }
-a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
-	outline: none;
-	outline-offset: none;
+.button-default:active {
+	position:relative;
+	top:1px;
 }
+
+
 /* Footer Section*/
 #footer {
 	background: #121d1f;
@@ -208,113 +207,4 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #footer a:hover {
 	color: #7bc3d1;
-}
-
-/* Media Queries */
-@media(min-width:768px) {
-.intro {
-	height: 100%;
-	padding: 0;
-	text-align: left;
-	color: #fff;
-}
-.intro H1 {
-	font-size: 60px;
-	font-weight: 500;
-	letter-spacing: -2px;
-}
-.intro .name {
-	font-weight: 600;
-}
-.intro .intro-text {
-	max-width: 75%;
-}
-.intro .intro-text p {
-	font-family: 'Lato', sans-serif;
-	font-size: 20px;
-	margin-bottom: 40px;
-	margin-top: 20px;
-}
-section {
-	padding: 120px 0;
-}
-header .intro-text {
-	padding-top: 300px;
-	padding-bottom: 200px;
-}
-.timeline:before {
-	left: 50%;
-}
-.timeline>li {
-	margin-bottom: 100px;
-	min-height: 100px;
-}
-.timeline>li .timeline-panel {
-	float: left;
-	width: 41%;
-	padding: 0 20px 20px 30px;
-	text-align: right;
-}
-.timeline>li .timeline-image {
-	left: 50%;
-	width: 100px;
-	height: 100px;
-	margin-left: -50px;
-}
-.timeline>li .timeline-image h4 {
-	margin-top: 16px;
-	line-height: 18px;
-	font-weight: 400;
-}
-.timeline>li.timeline-inverted>.timeline-panel {
-	float: right;
-	padding: 0 30px 20px 20px;
-	text-align: left;
-}
-}
-
-@media(min-width:992px) {
-#here-me h1 {
-	margin: 10px 0 0px;
-}
-.timeline>li {
-	min-height: 150px;
-}
-.timeline>li .timeline-panel {
-	padding: 0 20px 20px;
-}
-.timeline>li .timeline-image {
-	width: 150px;
-	height: 150px;
-	margin-left: -75px;
-}
-.timeline>li .timeline-image h4 {
-	margin-top: 30px;
-	font-size: 18px;
-	line-height: 26px;
-}
-.timeline>li.timeline-inverted>.timeline-panel {
-	padding: 0 20px 20px;
-}
-}
-
-@media(min-width:1200px) {
-.timeline>li {
-	min-height: 170px;
-}
-.timeline>li .timeline-panel {
-	padding: 10px 20px 20px 100px;
-}
-.timeline>li .timeline-image {
-	width: 150px;
-	height: 150px;
-	margin-left: -75px;
-}
-.timeline>li .timeline-image h4 {
-	margin-top: 40px;
-	font-weight: 400;
-}
-.timeline>li.timeline-inverted>.timeline-panel {
-	padding: 10px 100px 20px 20px;
-}
 }
