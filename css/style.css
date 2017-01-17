@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Rimouski';
 
-  src: url('../fonts/rimouski.ttf');
-  src: url('.../fonts/rimouski-webfont.woff2') format('woff2'),
-       url('.../fonts/rimouski-webfont.woff') format('woff');
+  src: url('fonts/rimouski.ttf');
+  src: url('fonts/rimouski-webfont.woff2') format('woff2'),
+       url('fonts/rimouski-webfont.woff') format('woff');
 }
 
 body, html {
@@ -17,6 +17,11 @@ body, html {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px
+}
+
+header .intro {
+padding-top: 250px;
+padding-bottom: 180px;
 }
 
 h1 {
